@@ -9,13 +9,13 @@ namespace SuminTriangle
            
             int row, column,m;
             Console.WriteLine("Enter the Number of Rows and Columns : ");
-            m = Convert.ToInt32(Console.ReadLine());
+            row_value = Convert.ToInt32(Console.ReadLine());
             int[,] array = new int[100,100];
             string[] number = new string[100];
             
             
             Console.WriteLine("The Matrix is:");
-            for ( row = 0; row < m; row++)
+            for ( row = 0; row < row_value; row++)
             {
                 number[row] = Console.ReadLine();
                 for (column = 0; column <= row-2; column++)
@@ -25,14 +25,14 @@ namespace SuminTriangle
             }
 
             /*loop for sum of maximum number calculation*/
-            for ( row = m - 1; row >= 0; row--) 
+            for ( row = row_value - 1; row >= 0; row--) 
             { 
             for (column = 0; column <= row; column++) 
                 {
                  if (array[row + 1,column] >  
                     array[row + 1,column + 1])
                     {
-                       array[row,column] += array[row + 1,column];        
+                       array[rows,column] += array[row + 1,column];        
                     }  
                 else
                    {
