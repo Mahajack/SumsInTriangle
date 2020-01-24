@@ -7,7 +7,7 @@ namespace SuminTriangle
         static void Main(string[] args)
         {
            
-            int row, column,m;
+            int row, column,row_value;
             Console.WriteLine("Enter the Number of Rows and Columns : ");
             row_value = Convert.ToInt32(Console.ReadLine());
             int[,] array = new int[100,100];
